@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Morse Code Simulator</h1>
+        <p>Ketik teks di bawah untuk diubah menjadi kode Morse.</p>
+        <textarea id="inputText" placeholder="Ketik di sini..."></textarea>
+        <div class="buttons">
+            <button id="encodeBtn">Encode (Teks ke Morse)</button>
+            <button id="decodeBtn">Decode (Morse ke Teks)</button>
+        </div>
+        <div class="audio-controls">
+            <button id="playAudioBtn">Putar Audio Morse</button>
+            <label for="speed">Kecepatan (WPM):</label>
+            <input type="range" id="speed" min="10" max="60" value="25">
+        </div>
+        <textarea id="outputText" placeholder="Hasil akan muncul di sini..." readonly></textarea>
+        <div class="explanation">
+            <p><strong>Cara menggunakan:</strong></p>
+            <ul>
+                <li><strong>Encode:</strong> Ketik teks biasa di kotak atas, lalu klik "Encode".</li>
+                <li><strong>Decode:</strong> Ketik kode Morse (pisahkan dengan spasi) di kotak atas, lalu klik "Decode".</li>
+                <li><strong>Putar Audio:</strong> Setelah meng-encode, klik "Putar Audio Morse" untuk mendengarkan.</li>
+            </ul>
+        </div>
+    </div>
+
+
+        <div class="container">
+            <h2>Caesar Cipher</h2>
+            <p>Caesar Cipher menggeser setiap huruf dalam teks sebanyak **kunci** yang ditentukan.</p>
+            <div class="input-section">
+                <label for="plaintext">Teks Asli:</label>
+                <textarea id="plaintext" placeholder="Masukkan teks di sini..."></textarea>
+            </div>
+            <div class="controls">
+                <label for="caesarKey">Kunci Geser (1-25):</label>
+                <input type="number" id="caesarKey" value="3" min="1" max="25">
+                <button id="encryptCaesarBtn">Enkripsi</button>
+                <button id="decryptCaesarBtn">Dekripsi</button>
+            </div>
+            <div class="output-section">
+                <label for="ciphertext">Teks Enkripsi:</label>
+                <textarea id="ciphertext" readonly></textarea>
+                 <div class="explanation"></div>
+            <p><strong>Cara menggunakan:</strong></p>
+            <ul>
+                <li><strong>Encode:</strong> Ketik teks biasa di kotak atas, lalu klik "Encode".</li>
+                <li><strong>Decode:</strong> Ketik kode Morse (pisahkan dengan spasi) di kotak atas, lalu klik "Decode".</li>
+                <li><strong>Putar Audio:</strong> Setelah meng-encode, klik "Putar Audio Morse" untuk mendengarkan.</li>
+            </ul>
+        </div>
+    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="encryption.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
